@@ -1,5 +1,5 @@
 const express  = require("express");
-require("./congif/dbconfig")
+require("./config/dbconfig")
 const register =  require("./router/details");
 const filterProducts = require("./router/filter")
 
