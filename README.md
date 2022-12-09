@@ -19,14 +19,33 @@ B. filter.js<br>
 2. Get products, filter by productCategory.<br>
 
 # Apis
-1. register  - 
-2. login
-3. delete
-4. update
-5. filter by brandName
-6. filter by productCategory
-7. get all products
-8. get a particular product
+1. register  - <br> 
+Cyclic - https://easy-erin-hermit-crab-hem.cyclic.app/api/user/register<br>
+Localhost - localhost:8000/api/user/register<br>
+
+2. delete<br>
+Cyclic - https://easy-erin-hermit-crab-hem.cyclic.app/api/user/product/:id<br>
+Localhost - localhost:8000/api/user/product/:id<br>
+
+3. update<br>
+Cyclic - https://easy-erin-hermit-crab-hem.cyclic.app/api/user/product/:id<br>
+Localhost - localhost:8000/api/user/product/:id<br>
+
+4. filter by brandName<br>
+Cyclic - https://easy-erin-hermit-crab-hem.cyclic.app/api/user/product/brand/:brd<br>
+Localhost - localhost:8000/api/user/product/brand/:brd<br>
+
+5. filter by productCategory<br>
+Cyclic - https://easy-erin-hermit-crab-hem.cyclic.app/api/user/product/category/:ctg<br>
+Localhost - localhost:8000/api/user/product/category/:ctg<br>
+
+6. get all products<br>
+Cyclic - https://easy-erin-hermit-crab-hem.cyclic.app/api/user/register<br>
+Localhost - localhost:8000/api/user/register<br>
+
+7. get a particular product<br>
+Cyclic - https://easy-erin-hermit-crab-hem.cyclic.app/api/user/product/:id<br>
+Localhost - localhost:8000/api/user/product/:id<br>
  
 # Functions And Errors:-
 

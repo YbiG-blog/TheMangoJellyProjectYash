@@ -5,11 +5,11 @@ const Product = require("../models/product");
 // products by filter
 
 // filter by brandName
-router.get("/product/brand/:id", async ({ params }, res) => {
+router.get("/product/brand/:brd", async ({ params }, res) => {
   try {
     const product = await Product.find(
       {
-        brandName: params.id
+        brandName: params.brd
       },
       {
         _id: 0,
@@ -33,11 +33,11 @@ router.get("/product/brand/:id", async ({ params }, res) => {
 });
 
 // filter by category
-router.get("/product/category/:id", async ({ params }, res) => {
+router.get("/product/category/:ctg", async ({ params }, res) => {
     try {
       const product = await Product.find(
         {
-            productCategory: params.id
+            productCategory: params.ctg
         },
         {
           _id: 0,
