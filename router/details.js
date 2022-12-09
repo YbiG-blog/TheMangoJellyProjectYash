@@ -2,7 +2,29 @@ const express = require("express");
 const router = new express.Router();
 const Product = require("../models/product");
 
-// get Products
+// view a particular product
+router.get("/product/:id", async ({ params }, res) => {
+  try {
+    const product = await Product.findById(params.id, {
+      _id: 0,
+      createdAt: 0,
+      updatedAt: 0,
+      __v: 0,
+    });
+    if (!product) {
+      res.status(404).json({
+        message: "Product not found with this id",
+      });
+      return;
+    }
+    res.status(200).json({
+      res: product,
+    });
+  } catch (error) {
+    return res.status(400).send(`error ${error}`);
+  }
+});
+// view all Products
 router.get("/register", async (req, res) => {
   try {
     const dataFind = await Product.find(
@@ -29,6 +51,7 @@ router.post("/register", async ({ body }, res) => {
     const {
       name,
       price,
+      productCategory,
       description,
       brandName,
       RAM,
@@ -39,6 +62,7 @@ router.post("/register", async ({ body }, res) => {
     const newData = new Product({
       name,
       price,
+      productCategory,
       description,
       brandName,
       RAM,
@@ -57,10 +81,10 @@ router.post("/register", async ({ body }, res) => {
 // delete Product
 router.delete("/product/:id", async ({ params }, res) => {
   try {
-    const user = await Product.findByIdAndDelete(params.id);
-    if (!user) {
-      res.status(400).json({
-        message: "This product id doesn't exist",
+    const product = await Product.findByIdAndDelete(params.id);
+    if (!product) {
+      res.status(404).json({
+        message: "Product not found with this id. So we can not delete.",
       });
       return;
     }

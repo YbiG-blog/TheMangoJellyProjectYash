@@ -9,6 +9,7 @@ const productSchema = new Schema(
       type: Number,
       required: true,
     },
+    productCategory: { type: String, default: "" },
     description: { type: String, required: true },
     brandName: {
       type: String,
