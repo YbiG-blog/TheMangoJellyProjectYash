@@ -7,16 +7,16 @@
 
 # Router
 
-A. <h2>details.js<h2>
-1. Post request - here the new data has created.
-2. Get request for All - gives to us all product details.
-3. Get request for a particular product - gives to us the particular product details.
-4. Delete request - delete a particular product.
-5. Updated request - update a particular product.
+A. details.js<br>
+1. Post request - here the new data has created.<br>
+2. Get request for All - gives to us all product details.<br>
+3. Get request for a particular product - gives to us the particular product details.<br>
+4. Delete request - delete a particular product.<br>
+5. Updated request - update a particular product.<br>
 
-B. <h2>filter.js<h2>
-1. Get products, filter by brandName
-2. Get products, filter by productCategory
+B. filter.js<br>
+1. Get products, filter by brandName.<br>
+2. Get products, filter by productCategory.<br>
 
 # Apis
 1. register  - 
@@ -30,19 +30,19 @@ B. <h2>filter.js<h2>
  
 # Functions And Errors:-
 
-<h3>Functions<h3>
-1. Find - used to fetch all model data from the database.
-2. findById - finds and returns one document that matches the given selection criteria(only valid for _id).
-3. findByIdAndDelete - finds and delete that docment(valid for only _id).
-4. findByIdAndUpdate - finds and updates one document that matches the given selection criteria(only valid for _id).
-5. FindOne -  finds and returns one document that matches the given selection criteria.
+*********  Functions
+1. Find - used to fetch all model data from the database.<br>
+2. findById - finds and returns one document that matches the given selection criteria(only valid for _id).<br>
+3. findByIdAndDelete - finds and delete that docment(valid for only _id).<br>
+4. findByIdAndUpdate - finds and updates one document that matches the given selection criteria(only valid for _id).<br>
+5. FindOne -  finds and returns one document that matches the given selection criteria.<br>
 
-<h3>Erros<h3>
-1. If data is not found then return a 404 error.
-2. Bad request (400 error code) - For syntax error, invalid request message framing, or deceptive request routing). 
-3. For internal server - return 501 error.
-4. If new data is created then send data with the 201 error code.
-5. If we fetched the data then send data response with a 200 error code.
+*********  Erros
+1. If data is not found then return a 404 error.<br>
+2. Bad request (400 error code) - For syntax error, invalid request message framing, or deceptive request routing).<br> 
+3. For internal server - return 501 error.<br>
+4. If new data is created then send data with the 201 error code.<br>
+5. If we fetched the data then send data response with a 200 error code.<br>
 
 # For testing use:-
 npm install
@@ -60,4 +60,4 @@ Post request with body(Product - Register) :-
     "bookingAvailable": "offline and online"<br>
 }
 
-** For any confusion contact me at #yashvardhan7906@gmail.com   
+*********  For any confusion contact me at #yashvardhan7906@gmail.com   
